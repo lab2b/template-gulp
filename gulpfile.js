@@ -28,8 +28,7 @@ gulp.task('watch', gulp.series(['browserSync']), async function(){
     gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
 })
 
-gulp.task('default', gulp.series(['watch']) , async function () {
-    
+gulp.task('default', gulp.series(['watch']) , async function () {    
     gulp.watch('app/scss/**/*.scss', gulp.series('sass'));
     gulp.watch((['browserSync', 'sass', 'watch'])); 
 });
